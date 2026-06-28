@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="fa-solid fa-book-open"></i>
+          Bookshop
+        </a>
+
+        <!-- Mobile Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Links -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link  active " href="./home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./Books.html">Books</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html"> About Us </a>
+            </li>
+          </ul>
+
+          <!-- Buttons -->
+          <div class="d-flex flex-column flex-lg-row gap-2 mt-3 mt-lg-0">
+            <button class="btn login-btn">Log in</button>
+            <button class="btn signup-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ================= HERO ================= -->
+    <section class="hero-1" data-aos="fade-up-left">
+      <div class="overlay"></div>
+      <div data-aos="fade-down">
+        <div
+          class="hero-content d-flex justify-content-center align-items-center text-center"
+        >
+          <div>
+            <!-- <h1 class="mb-4">Find Your Favorite Book</h1> -->
+
+            <div class="input-group search-box mx-auto">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search book..."
+              />
+              <button class="btn">🔍</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-3 -->
+
+    <section class="features py-5">
+      <div class="container">
+        <div class="row text-center" data-aos="fade-up-right">
+          <!-- Item 1 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="feature-box">
+              <i class="fa-solid fa-truck feature-icon"></i>
+              <h5>Fast & Reliable Shipping</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="feature-box">
+              <i class="fa-solid fa-lock feature-icon"></i>
+              <h5>Secure Payment</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="feature-box">
+              <i class="fa-solid fa-rotate-left feature-icon"></i>
+              <h5>Easy Returns</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="feature-box">
+              <i class="fa-solid fa-headset feature-icon"></i>
+              <h5>24/7 Support</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-seller py-5">
+      <div class="container text-center" data-aos="fade-up-right">
+        <h3 class="text-white mb-3">Best Seller</h3>
+        <p class="text-light mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et
+          ultricies est.
+        </p>
+
+        <!-- books -->
+        <div class="books-wrapper d-flex gap-3 overflow-auto pb-4">
+          <img src="./img/1.png" class="book" />
+          <img src="./img/2.jpg" class="book" />
+          <img src="./img/3.png" class="book" />
+          <img src="./img/4.jpg" class="book" />
+          <img src="./img/5.jpg" class="book" />
+          <img src="./img/6.jpg" class="book" />
+          <img src="./img/7.jpg" class="book" />
+          <img src="./img/9.jpg" class="book" />
+          <img src="./img/7.jpg" class="book" />
+        </div>
+
+        <!-- button -->
+        <a href="#" class="btn btn-pink mt-4">Shop now</a>
+      </div>
+    </section>
+
+    <!-- section-4 -->
+
+    <section class="recommended py-5">
+      <div data-aos="fade-up-left">
+        <div class="container">
+          <h2 class="section-title mb-4">Recommended For You</h2>
+
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-6">
+              <div class="book-card p-4 d-flex">
+                <img src="./img/10.png" class="book-img me-4" />
+
+                <div class="book-info w-100">
+                  <h4>Rich Dad And Poor Dad</h4>
+                  <p class="author">Author: Robert T. Kiyosaki</p>
+
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <div>
+                      <span class="stars">★★★★★</span>
+                      <span class="review">(180 Review)</span>
+                      <p class="rate mb-0">Rate: 4.2</p>
+                    </div>
+
+                    <h3 class="price">$30.00</h3>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                    <button class="btn cart-btn w-100">
+                      Add To Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <button class="btn heart-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-6">
+              <div class="book-card p-4 d-flex">
+                <img src="img/9.jpg" class="book-img me-4" />
+
+                <div class="book-info w-100">
+                  <h4>The Design Of Books</h4>
+                  <p class="author">Author: Debbie Berne</p>
+
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3"
+                  >
+                    <div>
+                      <span class="stars">★★★★★</span>
+                      <span class="review">(210 Review)</span>
+                      <p class="rate mb-0">Rate: 4.2</p>
+                    </div>
+
+                    <h3 class="price">$40.00</h3>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                    <button class="btn cart-btn w-100">
+                      Add To Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+
+                    <button class="btn heart-btn">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-5 -->
+    <section class="flash-sale py-5">
+      <div class="container" data-aos="fade-up-left">
+        <!-- top -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-5 flex-wrap"
+        >
+          <div>
+            <h3 class="fw-bold">Flash Sale</h3>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+
+          <!-- timer -->
+          <div class="timer">
+            <span id="time">30:00:00</span>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="position-relative">
+          <!-- arrows -->
+          <button class="arrow left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="arrow right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="row g-4 justify-content-center">
+            <!-- card -->
+            <div class="col-md-5">
+              <div class="flash-card p-3 d-flex">
+                <img src="./img/10.png" class="me-3 book-img" />
+
+                <div class="text-white w-100">
+                  <h5>Rich Dad And Poor Dad</h5>
+                  <p class="small">Author: Robert T. Kiyosaki</p>
+
+                  <div class="stars mb-1">★★★★★ (180 Review)</div>
+                  <div class="small mb-2">Rate: 4.2</div>
+
+                  <div class="price mb-2">
+                    <span class="old">$45.00</span>
+                    <span class="new">$30.00</span>
+                  </div>
+
+                  <!-- progress -->
+                  <div class="progress mb-1">
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
+
+                  <div class="small mb-2">4 books left</div>
+                  <button class="btn cart-btn">
+                    <i class="fa-solid fa-cart-shopping text-light"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- duplicate card -->
+            <div class="col-md-5">
+              <div class="flash-card p-3 d-flex">
+                <img src="./img/10.png" class="me-3 book-img" />
+
+                <div class="text-white w-100">
+                  <h5>Rich Dad And Poor Dad</h5>
+                  <p class="small">Author: Robert T. Kiyosaki</p>
+
+                  <div class="stars mb-1">★★★★★ (180 Review)</div>
+                  <div class="small mb-2">Rate: 4.2</div>
+
+                  <div class="price mb-2">
+                    <span class="old">$45.00</span>
+                    <span class="new">$30.00</span>
+                  </div>
+
+                  <div class="progress mb-1">
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
+
+                  <div class="small mb-2">4 books left</div>
+
+                  <button class="btn cart-btn">
+                    <i class="fa-solid fa-cart-shopping text-light"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5 mt-5">
+      <div class="container">
+        <!-- Top Row -->
+        <div class="row align-items-center mb-4">
+          <!-- Left -->
+          <div
+            class="col-md-6 d-flex align-items-center gap-4 flex-wrap text-white"
+          >
+            <h5 class="mb-0">
+              <i class="fa-solid fa-book-open"></i>
+              Bookshop
+            </h5>
+
+            <a href="./home.html">Home</a>
+            <a href="./Books.html">Books</a>
+            <a href="./about.html">About Us</a>
+          </div>
+
+          <!-- Right -->
+          <div class="col-md-6 text-md-end mt-3 mt-md-0 social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <hr class="border-light opacity-25" />
+
+        <!-- Bottom Row -->
+        <div class="row align-items-center">
+          <!-- Left -->
+          <div class="col-md-6 text-white small">
+            Developed By> EraaSoft &copy; All Copy Rights Reserved @2024
+          </div>
+
+          <!-- Right -->
+          <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <span class="text-white me-3 fs-5">
+              <i class="bi bi-globe"></i>
+            </span>
+
+            <button class="lang-btn">
+              English <i class="fa-solid fa-earth-americas"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      let time = 108000; // 30 hours in seconds
+
+      setInterval(() => {
+        let h = Math.floor(time / 3600);
+        let m = Math.floor((time % 3600) / 60);
+        let s = time % 60;
+
+        document.getElementById("time").innerText =
+          String(h).padStart(2, "0") +
+          ":" +
+          String(m).padStart(2, "0") +
+          ":" +
+          String(s).padStart(2, "0");
+
+        if (time > 0) time--;
+      }, 1000);
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
